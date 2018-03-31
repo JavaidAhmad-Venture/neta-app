@@ -1,0 +1,23 @@
+.breadcrumb{
+    background-color:white;
+    padding:5px 0;
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-bottom-color: #efeaea;
+    font-size: 15;
+    font-weight: bold;
+    color: black;
+}
+.breadcrumb li{
+    display:inline;
+    margin:2;
+   
+}
+.bItem{
+    margin-left: 35%;
+    margin-right: 5%;
+}
+.bItem2{
+    margin-right: 5%;
+}
