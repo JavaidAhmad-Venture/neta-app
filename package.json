@@ -24,7 +24,13 @@
     "angular-bootstrap-md": "^5.2.3",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19"
+    "zone.js": "^0.8.19",
+    "bootstrap": "4.0.0",
+    "flag-icon-css": "2.9.0",
+    "moment": "2.20.1",
+    "simple-line-icons": "^2.4.1",
+    "ng2-charts": "1.6.0",
+    "ngx-bootstrap": "2.0.2"
   },
   "devDependencies": {
     "@angular/cli": "1.6.8",

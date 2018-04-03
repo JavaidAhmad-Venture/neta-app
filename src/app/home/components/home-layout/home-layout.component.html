@@ -2,16 +2,18 @@
 <home-sub-header></home-sub-header>
 <div class="container">
   <div class="row">
-    <div class="col-md-8 poll-container ">
+    <div class="col">
+  <div class="row">
+    <div class="poll-container ">
       <div class="row"> <p class='tolltip-text  float-left'>TODAY'S POLL</p> </div> 
         <div class="row"> <h4 class="poll-question-text float-left">Which party do you approve of?</h4></div>
        
        
-     <div class="row">   <!--Panel-->
+     <div class="row" style="padding-left: 20px;padding-right: 20px;">   <!--Panel-->
         <div class="container-fluid">
             <div class="row">
-              <div class="col">
-                  <party-panel imageUrl="assets/cong.png" partyName="Indian National Congress"></party-panel> 
+              <div class="col"><party-panel imageUrl="assets/cong.png" partyName="Indian National Congress"></party-panel>
+                   
               </div>
               <div class="col-xs-1"></div>
               <div class="col">
@@ -19,7 +21,7 @@
               </div>
             </div>
            
-            <div class="row" style="margin-top:15px;">
+            <div class="row" style="margin-top:15px;margin-bottom:15px;">
                 <div class="col">
                     <party-panel imageUrl="assets/aap.png" partyName="Aam Aadmi Party"></party-panel> 
                   </div>
@@ -34,8 +36,30 @@
         <!--/.Panel-->
                       
     </div>
-    <div class="col-md-4">
+  </div>
 
+    <!-- Statstics -->
+    <div class="row statistics-container"><h6>Statistics</h6></div>
+    <div class="row ">
+    
+      <div class="col">
+        <img src="assets/chart-main.png" style="" alt="">
+      </div>
+      <!-- <div class="col">
+        <statistics-container progressBox="true">
+           
+        </statistics-container>
+      </div>
+        <div class="col-xs-1"></div>
+      <div class="col">
+          <statistics-container></statistics-container>
+        </div>
+     
+    </div> -->
+  </div>
+    <div class="col-md-4">
+        <!-- side bar  -->
     </div>
   </div>
+
 </div>
