@@ -4,29 +4,29 @@
   <div class="row">
     <div class="col">
   <div class="row">
-    <div class="poll-container ">
-      <div class="row"> <p class='tolltip-text  '>TODAY'S POLL</p> </div> 
-        <div class="row"> <h4 class="poll-question-text ">Which party do you approve of?</h4></div>
+    <div class="poll-container">
+      <div class="w-100"> <p class='tolltip-text  '>TODAY'S POLL</p> </div> 
+        <div class="w-100"> <h4 class="poll-question-text ">Which party do you approve of?</h4></div>
        
        
      <div class="row" style="padding-left: 20px;padding-right: 20px;">   <!--Panel-->
         <div class="container-fluid">
             <div class="row">
-              <div class="col"><party-panel imageUrl="assets/cong.png" partyName="Indian National Congress"></party-panel>
-                   
+              <div class="col-md-6 col-sm-8 col-xs-12">
+                <a href="#"><party-panel imageUrl="assets/cong.png" partyName="Indian National Congress"></party-panel>  </a>   
               </div>
-              <div class="col-xs-1"></div>
-              <div class="col">
+              <!-- <div class="col-xs-1"></div> -->
+              <div class="col-md-6 col-sm-8 col-xs-12">
                   <party-panel imageUrl="assets/smd.png" partyName="Shiromani Akali Dal"></party-panel> 
               </div>
             </div>
            
             <div class="row" style="margin-top:15px;margin-bottom:15px;">
-                <div class="col">
+                <div class="col-md-6 col-sm-8 col-xs-12">
                     <party-panel imageUrl="assets/aap.png" partyName="Aam Aadmi Party"></party-panel> 
                   </div>
-                  <div class="col-xs-1"></div>
-                  <div class="col">
+                  <!-- <div class="col-xs-1"></div> -->
+                  <div class="col-md-6 col-sm-8 col-xs-12">
                     <party-panel imageUrl="assets/cong.png" partyName="Others"></party-panel> 
                   </div>
             </div>
@@ -37,35 +37,24 @@
                       
     </div>
   </div>
-
-    <!-- Statstics -->
-    <!-- <div class="row statistics-container"><h6>Statistics</h6></div>
-    <div class="row ">
-    
-      <!-- <div class="col">
-        <img src="assets/chart-main.png" style="" alt="">
-      </div> -->
-      <!-- <div class="col">
-        <statistics-container progressBox="true">
-           
-        </statistics-container>
-      </div>
-        <div class="col-xs-1"></div>
-      <div class="col">
-          <statistics-container></statistics-container>
-        </div>
-     
-    </div> -->
-  </div> -->
-    <div class="col-md-4">
-        <sidebar-home></sidebar-home>
+   <!-- News section -->
+   <div class="row">
+    <div class="col">
+      <news-container></news-container>
     </div>
   </div>
+ 
   
   <!-- Popular tweet section -->
   <div class="row">
-    <div class="col-md-5">
+    <div class="col">
         <popular-tweet></popular-tweet>
+    </div>
+  </div>
+</div> -->
+    <!-- SideBar -->
+    <div class="col-md-4" style="margin-top:4%;">
+      <sidebar-home></sidebar-home>
     </div>
   </div>
 

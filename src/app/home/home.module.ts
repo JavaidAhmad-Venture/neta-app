@@ -6,6 +6,9 @@ import { PartyPanelComponent } from './components/party-panel/party-panel.compon
 import { StatisticsContainerComponent } from './components/statistics-container/statistics-container.component';
 import { PopularTweetComponent } from './components/popular-tweet/popular-tweet.component';
 import { SidebarHomeComponent } from '../core/sidebar-home/sidebar-home.component';
+import { TweetCardComponent } from './components/tweet-card/tweet-card.component';
+import { NewsContainerComponent } from './components/news-container/news-container.component';
+import { NewsCardComponent } from './components/news-card/news-card.component';
 
 @NgModule({
   imports: [
@@ -16,7 +19,10 @@ import { SidebarHomeComponent } from '../core/sidebar-home/sidebar-home.componen
     PartyPanelComponent, 
     StatisticsContainerComponent, 
     PopularTweetComponent,
-    SidebarHomeComponent
+    SidebarHomeComponent,
+    TweetCardComponent,
+    NewsContainerComponent,
+    NewsCardComponent
   ]
 })
 export class HomeModule { }
