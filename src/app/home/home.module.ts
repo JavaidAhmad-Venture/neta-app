@@ -5,11 +5,18 @@ import { HomeSubHeaderComponent } from './components/home-sub-header/home-sub-he
 import { PartyPanelComponent } from './components/party-panel/party-panel.component';
 import { StatisticsContainerComponent } from './components/statistics-container/statistics-container.component';
 import { PopularTweetComponent } from './components/popular-tweet/popular-tweet.component';
+import { SidebarHomeComponent } from '../core/sidebar-home/sidebar-home.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [HomeLayoutComponent, HomeSubHeaderComponent, PartyPanelComponent, StatisticsContainerComponent, PopularTweetComponent]
+  declarations: [HomeLayoutComponent, 
+    HomeSubHeaderComponent, 
+    PartyPanelComponent, 
+    StatisticsContainerComponent, 
+    PopularTweetComponent,
+    SidebarHomeComponent
+  ]
 })
 export class HomeModule { }
