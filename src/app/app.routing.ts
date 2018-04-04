@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
 import { HomeLayoutComponent } from './home/home-layout.component';
+import { LeadersLayoutComponent } from './leaders/leaders-layout.component';
 export const routes: Routes = [
     {
       path: '',
@@ -14,7 +15,7 @@ export const routes: Routes = [
      },
     {
         path:'leaders',
-        component:HomeLayoutComponent
+        component:LeadersLayoutComponent
     },
     {
         path:'influencers',
