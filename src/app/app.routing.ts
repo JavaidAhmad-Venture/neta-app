@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
-import { HomeLayoutComponent } from './home/components/home-layout/home-layout.component';
+import { HomeLayoutComponent } from './home/home-layout.component';
 export const routes: Routes = [
     {
       path: '',
