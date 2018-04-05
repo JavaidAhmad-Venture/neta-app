@@ -2,10 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import { MapChart } from 'angular-highcharts';
 @Component({
   selector: 'statistics-card',
- // templateUrl: './statistics-card.component.html',
-  template: `
-    <div [chart]="mapChart"></div>
-  `,
+ templateUrl: './statistics-card.component.html',
+
   styleUrls: ['./statistics-card.component.scss']
 })
  
