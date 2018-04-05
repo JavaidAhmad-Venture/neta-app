@@ -1,31 +1,82 @@
-<p>statistics</p>
-<div class="row">
 
- <div class="col-xs-1"></div>
+<p></p>
+<p style="color:black;"><b>Statistics</b></p>
+  <!-- <div class="container text-left">
+    <div class="row">
+      <div class="col">
+        <b></b>
+      </div>
 
-<div class="col">
-    <statistics-card style="height:40px" imgUrl="assets/cong.png" partyColor="orange" cardTitle="Indian National Congress" progressPrecent={{70}}></statistics-card><br>
-    <statistics-card style="height:40px" imgUrl="assets/aap.png" partyColor="green"  cardTitle="Aam Admi Party" progressPrecent={{50}} ></statistics-card><br>
-    <statistics-card style="height:40px" imgUrl="assets/smd.png" partyColor="blue"  cardTitle="samdi dal" progressPrecent={{35}}></statistics-card><br >
-    <statistics-card style="height:40px" imgUrl="assets/aap.png" partyColor="grey"   cardTitle="others" progressPrecent={{27}}></statistics-card><br>
-</div>
-<div class="col">
-    <div class="div rounded" style="display:block;">
-    
-        <div>
-        <div class="col"></div>
-      <div class="col-xs-1"></div>
-        <div class="col">
-            <div class="container-fluid">
+    </div>
+
+    <div class="row">
+              <div class="col-md-6" style="background-color:white;width:100%;">
+                  <div class="card-body"><P>Vote Breakdown<span class="pul-right">Last 24 Hours</span></P>
+                  <statistics-card style="height:40px" imgUrl="assets/cong.png" partyColor="orange" cardTitle="Indian National Congress" progressPrecent={{70}}></statistics-card>
+                  <statistics-card style="height:40px" imgUrl="assets/aap.png" partyColor="green"  cardTitle="Aam Admi Party" progressPrecent={{50}} ></statistics-card>
+                  <statistics-card style="height:40px" imgUrl="assets/smd.png" partyColor="blue"  cardTitle="samdi dal" progressPrecent={{35}}></statistics-card>
+                  <statistics-card style="height:40px" imgUrl="assets/aap.png" partyColor="grey"   cardTitle="others" progressPrecent={{27}}></statistics-card>        
       
-              <div class="float-left">Vote Breakdown</div>
-            <div class="float-right">Last 24 hours</div>
-              <div [chart]="chart" style="width:100%;height:250px;"></div>  
+              </div>
+      
+            </div>
+      
+              <div class="col-md-6" style="background-color:white;">
+                  <div class="container-fluid">
             
-          </div>
-          </div>
-        </div>
-</div>
-      
+                    <div class="float-left">Vote Breakdown</div>
+                  <div class="float-right">Last 24 hours</div>
+                    <div [chart]="chart" style="width:100%;height:200px;"></div>  
+                  
+                </div>
+               
+      </div>
+      </div>
+  </div>
+ -->
 
-</div>
+
+  <div class="container text-left">
+    <div class="row">
+      <div class="col">
+        <b></b>
+      </div>
+
+    </div>
+
+    <div class="row ">
+              <div class="col-md-6 rounded">
+                <div class="card container-fluid" style="width:100%;margin-left:-4%;">
+                  <div class="card-header body-text"  style="background-color:white;"> Vote Breakdown <section class="float-right"> Last 24 hours <i class="fas fa-angle-down"></i></section></div>
+                  <div class="card-body">
+                   
+                  <statistics-card style="height:40px" imgUrl="assets/cong.png" partyColor="orange" cardTitle="Indian National Congress" progressPrecent={{70}}></statistics-card>
+                  <statistics-card style="height:40px" imgUrl="assets/aap.png" partyColor="green"  cardTitle="Aam Admi Party" progressPrecent={{50}} ></statistics-card>
+                  <statistics-card style="height:40px" imgUrl="assets/smd.png" partyColor="blue"  cardTitle="samdi dal" progressPrecent={{35}}></statistics-card>
+                  <statistics-card style="height:40px" imgUrl="assets/aap.png" partyColor="grey"   cardTitle="others" progressPrecent={{27}}></statistics-card>        
+      
+              </div>
+              <div class="card-footer" style="background-color:white;">
+                <section class="float-right body-text"> See details <i class="fas fa-angle-right"></i></section>
+              </div>
+      
+            </div> 
+          </div>  
+      
+              <div class="col-md-6">
+                  <div class="card container-fluid" style="width:100%;margin-left:4%;">
+                    <div class="card-header body-text" style="background-color:white;">Vote Breakdown  <section class="float-right"> Last 24 hours <i class="fas fa-angle-down"></i> </section></div>
+                    <div class="card-body">
+                    <div class="float-left"></div>
+                    <div class="float-right"></div>
+                    <div [chart]="chart" style="width:100%;height:210px;"></div>  
+                  </div>
+                  <div class="card-footer " style="background-color:white;">
+                    <section class="float-right body-text">See details <i class="fas fa-angle-right"></i> </section>
+                  </div>
+                </div>       
+              </div>
+      </div>
+  </div>
+<p></p>
+  
