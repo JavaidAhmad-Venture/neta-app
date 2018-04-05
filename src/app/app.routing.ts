@@ -4,6 +4,7 @@ import { PageNotFoundComponent } from './core/page-not-found/page-not-found.comp
 import { HomeLayoutComponent } from './home/home-layout.component';
 import { LeadersLayoutComponent } from './leaders/leaders-layout.component';
 import { IssuesLayoutComponent } from './issues/issues-layout.component';
+import { CategoriesComponent } from './issues/components/categories/categories.component';
 export const routes: Routes = [
     {
       path: '',
@@ -24,7 +25,8 @@ export const routes: Routes = [
     },
     {
         path:'issues',
-        component:IssuesLayoutComponent
+        loadChildren:"app/issues/issues.module#IssuesModule",
+    
     },
     {
         path:'**',
