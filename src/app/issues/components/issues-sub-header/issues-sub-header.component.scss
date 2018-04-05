@@ -1,0 +1,33 @@
+.breadcrumb{
+    background-color:white;
+    padding:5px 0;
+    position: absolute;
+    width: 95%;
+    border-bottom: 1px solid;
+    border-bottom-color: #efeaea;
+    font-size: 11;
+    font-weight: bold;
+    content: "";
+  
+}
+.breadcrumb li{
+    display:inline;
+    margin:2;
+   
+}
+.bItem{
+    margin-left: 35%;
+   
+}
+.breadcrumb-item{
+    color:black;
+}
+a {
+    color: black;
+}
+.breadcrumb>li+li:nth-last-child(1):before {
+	content: " ";
+}
+.breadcrumb>li+li:nth-last-child(2):before {
+	content: " ";
+}

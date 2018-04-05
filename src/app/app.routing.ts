@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
 import { HomeLayoutComponent } from './home/home-layout.component';
 import { LeadersLayoutComponent } from './leaders/leaders-layout.component';
+import { IssuesLayoutComponent } from './issues/issues-layout.component';
 export const routes: Routes = [
     {
       path: '',
@@ -22,8 +23,8 @@ export const routes: Routes = [
         component:HomeLayoutComponent
     },
     {
-        path:'Issues',
-        component:HomeLayoutComponent
+        path:'issues',
+        component:IssuesLayoutComponent
     },
     {
         path:'**',
