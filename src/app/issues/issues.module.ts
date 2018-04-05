@@ -7,6 +7,8 @@ import { CategoryCardComponent } from './components/category-card/category-card.
 import { RouterModule } from '@angular/router';
 import { MyIssuesComponent } from './components/my-issues/my-issues.component';
 import { TrendingComponent } from './components/trending/trending.component';
+import { IssuesSidebarComponent } from './components/issues-sidebar/issues-sidebar.component';
+
 
 
 @NgModule({
@@ -22,6 +24,13 @@ import { TrendingComponent } from './components/trending/trending.component';
      
     ]),
   ],
-  declarations: [IssuesLayoutComponent, IssuesSubHeaderComponent, CategoriesComponent, CategoryCardComponent, TrendingComponent, MyIssuesComponent]
+  declarations: [
+      IssuesLayoutComponent,
+      IssuesSubHeaderComponent, 
+      CategoriesComponent,
+      CategoryCardComponent, 
+      TrendingComponent, 
+      MyIssuesComponent, IssuesSidebarComponent]
 })
 export class IssuesModule { }
+IssuesSidebarComponent
