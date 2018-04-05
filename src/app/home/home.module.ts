@@ -9,6 +9,7 @@ import { SidebarHomeComponent } from '../core/sidebar-home/sidebar-home.componen
 import { TweetCardComponent } from './components/tweet-card/tweet-card.component';
 import { NewsContainerComponent } from './components/news-container/news-container.component';
 import { NewsCardComponent } from './components/news-card/news-card.component';
+import { ProfilePanelComponent } from './components/profile-panel/profile-panel.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { NewsCardComponent } from './components/news-card/news-card.component';
     SidebarHomeComponent,
     TweetCardComponent,
     NewsContainerComponent,
-    NewsCardComponent
+    NewsCardComponent,
+    ProfilePanelComponent
   ]
 })
 export class HomeModule { }
