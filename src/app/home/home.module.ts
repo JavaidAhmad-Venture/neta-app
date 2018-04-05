@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChartModule } from 'angular-highcharts';
 import { HomeLayoutComponent } from './home-layout.component';
 import { HomeSubHeaderComponent } from './components/home-sub-header/home-sub-header.component';
 import { PartyPanelComponent } from './components/party-panel/party-panel.component';
@@ -10,10 +11,12 @@ import { TweetCardComponent } from './components/tweet-card/tweet-card.component
 import { NewsContainerComponent } from './components/news-container/news-container.component';
 import { NewsCardComponent } from './components/news-card/news-card.component';
 import { ProfilePanelComponent } from './components/profile-panel/profile-panel.component';
+import { StatisticsCardComponent } from './components/statistics-container/statistics-card/statistics-card.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    ChartModule,
   ],
   declarations: [HomeLayoutComponent, 
     HomeSubHeaderComponent, 
@@ -24,7 +27,8 @@ import { ProfilePanelComponent } from './components/profile-panel/profile-panel.
     TweetCardComponent,
     NewsContainerComponent,
     NewsCardComponent,
-    ProfilePanelComponent
-  ]
+    ProfilePanelComponent,
+    StatisticsCardComponent
+  ],
 })
 export class HomeModule { }

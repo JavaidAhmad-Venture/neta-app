@@ -1,9 +1,31 @@
-<div class="div" style="height:250px;width:250;  background-color:#fff; ">
-    <div *ngIf="progressBox">
-    <div class="col"><party-panel imageUrl="assets/cong.png" partyName="Indian National Congress"></party-panel>        
-    </div><br>
-    <div class="col"><party-panel imageUrl="assets/cong.png" partyName="Indian National Congress"></party-panel>        
-    </div>
-  </div>
+<p>statistics</p>
+<div class="row">
+
+ <div class="col-xs-1"></div>
+
+<div class="col">
+    <statistics-card style="height:40px" imgUrl="assets/cong.png" partyColor="orange" cardTitle="Inian National Congress" progressPrecent={{10}}></statistics-card><br>
+    <statistics-card style="height:40px" imgUrl="assets/aap.png" partyColor="green"  cardTitle="Aam Admi Party" progressPrecent={{20}} ></statistics-card><br>
+    <statistics-card style="height:40px" imgUrl="assets/smd.png" partyColor="blue"  cardTitle="samdi dal" progressPrecent={{30}}></statistics-card><br >
+    <statistics-card style="height:40px" imgUrl="assets/aap.png" partyColor="grey"   cardTitle="others" progressPrecent={{27}}></statistics-card><br>
+</div>
+<div class="col">
+    <div class="div rounded" style="display:block;">
+    
+        <div *ngIf="progressBox">
+        <div class="col"></div>
+      <div class="col-xs-1"></div>
+        <div class="col">
+            <div class="container-fluid">
+      
+              <div class="float-left">Vote Breakdown</div>
+            <div class="float-right">Last 24 hours</div>
+              <div [chart]="chart" style="width:100%;height:250px;"></div>  
+            
+          </div>
+          </div>
+        </div>
+</div>
+      
 
 </div>
