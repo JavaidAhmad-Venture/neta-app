@@ -14,6 +14,7 @@ export class StatisticsContainerComponent{
        style: {
             fontFamily: 'serif'
         },
+        defaultSeriesType: 'line',
     },
     
     title: {
@@ -23,6 +24,7 @@ export class StatisticsContainerComponent{
       labels: {
         enabled:false 
       },
+      
       title: {
           text: null
       },
@@ -37,11 +39,13 @@ export class StatisticsContainerComponent{
       },
     
   },
+  
   credits:{
     enabled:false
   },
+  
     series: [{
-      name: 'AAP',
+      name: "nc",
       data: [4, 5, 4,5,4,5,7]
     },
     {
@@ -61,8 +65,12 @@ export class StatisticsContainerComponent{
     line: {
         marker: {
             enabled: false
-        }
-    }
+        },
+        dataLabels: {
+          enabled: false
+      }
+
+    },
 }
   });
   @Input('progressBox') progressBox=false;
