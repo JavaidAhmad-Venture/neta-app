@@ -1,20 +1,66 @@
-.breadcrumb{
-    background-color:white;
-    padding:5px 0;
-    position: absolute;
-    width: 95%;
-    border-bottom: 1px solid;
-    border-bottom-color: #efeaea;
-    font-size: 15;
-    font-weight: bold;
-    color: black;
+
+
+#myTab {
+  margin-left: -2%;
+  margin-right: -2%;
+  background-color: white;
+  height: 3%;
 }
-.breadcrumb li{
-    display:inline;
-    margin:2;
-   
+
+
+.nav-tabs {
+  border-bottom: 1px solid #DDD;
 }
-.bItem{
-    margin-left: 35%;
-   
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+  border-width: 0;
+}
+
+.nav-tabs>li>a {
+  border: none;
+  color: #666;
+  font-size: 12;
+  font-weight: bold;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li>a:hover {
+  border: none;
+  color: #4285F4 !important;
+  background: transparent;
+}
+
+.nav-tabs>li>a::after {
+  content: "";
+  background: #4285F4;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: -1px;
+  transition: all 250ms ease 0s;
+  transform: scale(0);
+  background-color: #4285F4;
+}
+
+.nav-tabs>li.active>a::after,
+.nav-tabs>li:hover>a::after {
+  transform: scale(1);
+  background: #21527d;
+  background-color: #21527d
+}
+
+.tab-nav>li>a::after {
+  background: #21527d none repeat scroll 0% 0%;
+  color: #fff;
+  background-color: #4285F4;
+  border-bottom: 2px solid #21527d;
+  border-bottom-color: #21527d;
+ 
+}
+
+.tab-pane {
+  padding: 15px 0;
 }
