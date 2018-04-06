@@ -1,7 +1,15 @@
 
-<ul class="breadcrumb breadcrumb-default align-items-center ">
-  
-  <li class="bItem visible-lg-block visible-md-block breadcrumb-item "><a  routerLink="/issues/" routerLinkActive="active">Categories</a></li>
-  <li class=" visible-lg-block visible-md-block breadcrumb-item "><a routerLink="/issues/trending" routerLinkActive="active">Trending</a></li>
-  <li class=" visible-lg-block visible-md-block breadcrumb-item "><a routerLink="/issues/my-issues" routerLinkActive="active">My Issues</a></li>
+
+
+
+<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+  <li class="nav-item" id='firstTab'>
+    <a class="nav-link" id="home-tab" data-toggle="tab" routerLink="/issues/" routerLinkActive="active" role="tab" aria-controls="home" aria-selected="true">Categories</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" routerLink="/issues/trending" routerLinkActive="active" role="tab" aria-controls="profile" aria-selected="false">Trending</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" routerLink="/issues/my-issues" routerLinkActive="active" role="tab" aria-controls="contact" aria-selected="false">My Issues</a>
+  </li>
 </ul>

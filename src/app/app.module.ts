@@ -1,3 +1,5 @@
+
+import { CreateIssueComponent } from './core/create-issue/create-issue.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
@@ -16,11 +18,13 @@ import { InfluencersModule } from './influencers/influencers.module';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     AppHeaderComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CreateIssueComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +37,6 @@ import { InfluencersModule } from './influencers/influencers.module';
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

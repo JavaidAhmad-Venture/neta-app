@@ -1,3 +1,143 @@
-<div class="row" style="margin-top: 4%;">
-  hello
+
+<button type="button" class="btn btn-primary relative waves-light" (click)="basicModal.show()" mdbRippleRadius><i class="fa fa-plus" ></i><span style="margin-left: 6px;">Create a new issue</span> </button>
+
+
+<div  mdbModal #basicModal="mdb-modal"  class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Create Issue</h4>
+                <button type="button" class="close btn btn-danger" data-dismiss="modal" aria-label="Close" (click)="basicModal.hide()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <div class="md-form mb-5">
+                    <i class="fa fa-user prefix grey-text"></i>
+                    <input type="text" id="form34" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="form34">Issue Title</label>
+                </div>
+
+                <div class="md-form mb-5">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="email" id="form29" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                </div>
+
+                <div class="md-form mb-5">
+                    <i class="fa fa-tag prefix grey-text"></i>
+                    <input type="text" id="form32" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="form32">Issue Description</label>
+                </div>
+
+                <div class="md-form">
+                    <i class="fa fa-pencil prefix grey-text"></i>
+                    <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                    <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal"  (click)="basicModal.hide()">Cancel</button>
+                <button type="button" class="btn btn-primary">Create</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="row">
+   
+  <h6 style="margin-top:10px; color:black;"><b>News</b></h6>
+
+  <div class="row">
+    <div class="card-body">
+      <!--Title-->
+      <h6 class="card-title header-text">Will turn Punjab into revenue surplus state by 4th budget:Manpreet Badal</h6>
+      <!--Text-->
+      <p class="card-text body-text">There are many variations of passages of Lorem Ipsum available, but the majority</p>
+    <p >04 April,2018</p>
+  </div>
+</div>
+<hr/>
+    <div class="row">
+      
+      <div class="media box1">
+        <img class="mr-3" src="assets/badal2.png"  style="height:100px;width: 80;" alt="Generic placeholder image">
+        <div class="media-body">
+          <p class="mt-0 header-text">Will turn Punjab into revenue surplus state by 4th budget:Manpreet Badal</p>
+          <p class="body-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+         <div class="media-footer">
+            <p >04 April,2018</p>
+         </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="media narrower " >
+
+            <!--Card image-->
+            <div class="view overlay">
+                <img src="" style="" style="height:100px;" class="img-fluid" alt="">
+                <a>
+                    <div class="mask rgba-white-slight"></div>
+                </a>
+            </div>
+            <!--/.Card image-->
+          
+            <!--Card content-->
+            <div class="card-body">
+                <!--Title-->
+                <h6 class="card-title header-text">Will turn Punjab into revenue surplus state by 4th budget:Manpreet Badal</h6>
+                <!--Text-->
+                <p class="card-text body-text">There are many variations of passages of Lorem Ipsum available, but the majority</p>
+              <p >04 April,2018</p>
+            <div class="card-body">
+                <small ><a href="#" class=" d-flex justify-content-end body-text" style="color: black;"><h5 style="font-size: 12px;">see <br> more</h5><span><i class="fa fa-chevron-right pl-2"></i></span></a></small>
+            </div>
+            </div>
+              
+            <!--/.Card content-->
+          
+          </div>
+    </div>
+    <br>
+    <h6 class="header-text" style="color: black;">Popular Tweets</h6>
+
+         <!--Card Wider-->
+         <div class="media  card-cascade  h-100 d-flex flex-column justify-content-between " >
+            <!--Card content-->
+            <div class="card-body ">
+              
+                <p class="media-text" style="color:rgb(38, 33, 33);"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          
+              </div>
+          
+              <div class="media-footer">
+                <!--Linkedin-->
+                  
+                  <div class="media" style="height:40px;">
+                        <img class="mr-3" src="assets/profile2.png" style="height:50px;width:40px;border-radius: 50px;" alt="Generic placeholder image">
+                        <div class="media-body">
+                          <h6 class="mt-0">Rahi Javaid</h6>
+                          <p style="color:#B2BABB  ;">@rahijavaid4 test</p>
+                        </div>
+                         <a class="icons-sm tw-ic float-right"><i class="fa fa-twitter"> </i></a>
+                  </div>
+                  
+                <!--Twitter-->
+               
+               
+          
+           
+              </div> 
+          
+          </div>
+          
+          
+    
 </div>

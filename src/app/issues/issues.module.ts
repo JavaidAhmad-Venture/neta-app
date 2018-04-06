@@ -1,3 +1,5 @@
+import { AppModule } from './../app.module';
+import { CreateIssueComponent } from '../core/create-issue/create-issue.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IssuesLayoutComponent } from './issues-layout.component';
@@ -8,12 +10,18 @@ import { RouterModule } from '@angular/router';
 import { MyIssuesComponent } from './components/my-issues/my-issues.component';
 import { TrendingComponent } from './components/trending/trending.component';
 import { IssuesSidebarComponent } from './components/issues-sidebar/issues-sidebar.component';
+import { HomeModule } from '../home/home.module';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
+
 
 
 
 @NgModule({
   imports: [
     CommonModule,
+    HomeModule,
+    MDBBootstrapModule.forRoot(),
     RouterModule.forChild([
       {path:'',component:IssuesLayoutComponent,
     children:[
@@ -30,7 +38,9 @@ import { IssuesSidebarComponent } from './components/issues-sidebar/issues-sideb
       CategoriesComponent,
       CategoryCardComponent, 
       TrendingComponent, 
-      MyIssuesComponent, IssuesSidebarComponent]
+      MyIssuesComponent, 
+      IssuesSidebarComponent,
+  
+    ]
 })
 export class IssuesModule { }
-IssuesSidebarComponent
